@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+<!-- <ul>
+	<li>Task 1</li>
+		<ul>
+			<li><a href="#age">Find the age</a></li>
+			<li><a href="#largest_number"> the largest number out of two numbers</a></li>
+			<li><a href="#block">Find the right block of the building based on the appartment number</a></li>
+			<li><a href="#authorization">Compare login and password</a></li>
+			<li><a href="#largest_number_from3">Find the largest number out of three numbers</a></li>
+		</ul>
+	<li>Task 2
+		<ul>
+			<li >List numbers from 0 to 101</li>
+			<li>List numbers from 200 to 0</li>
+			<li>Find a sum of numbers from 0 to 100</li>
+			<li><a href="#find_power">Find the power of the number</a></li>
+			<li>Multiply numbers by 7</li>
+			<li>Multiply numbers from 1 to 50</li>
+			<li>List special symbols from 1000 to 2000</li>
+		</ul>
+	</li>
+</ul> -->
+
+<h3  id="age">1.1. Please enter the year of your birth: </h3>
+<form>
+<!-- 1.1. Finds the age of the user -->
+<input type="text" id="year">
+<button id="age_button">Show result</button>
+</form>
+
+<!-- 1.2. Compares numbers and returns the biggest -->
+<h3 id="largest_number">1.2. Find the largest number out of two numbers</h3>
+<form>
+	<input type="text" id="compare1" placeholder="Give me an integer">
+	<input type="text" id="compare2" placeholder="Give me an integer">
+	<input type="submit" value="Compare" id="compareButton">
+</form>
+
+<h3 id="block">1.3. Find the right block of the building based on the appartment number</h3>
+<p>Task summary: There are 80 appartments in the building which has three block. Block1: appartments 1-20; Block2: 21-64; Block3: 65-80.</p>
+<form>
+	<input type="number" min = "1" id="aptmt" placeholder="Appartment number: ">
+	<input type="submit" value="Submit" id="findBlock">
+</form>
+
+
+<h3 id="authorization">1.4. Compare login and password</h3>
+<form action="#">
+	<input type="text" id="check_login" placeholder="Enter your login">
+	<input type="password" placeholder="Enter your password" id="check_password">
+	<input type="submit" value="Login" id="check_user">
+</form>
+
+<h3 id="largest_number_from3">1.5. Find the largest number out of three numbers</h3>
+
+First number: <input type="number" id="a">
+Second number: <input type="number" id="b">
+Third number: <input type="number" id="c">
+<input type="button" value="Submit" id="compare_abc">
+
+<h3 id="find_power">2.4. Find the power of the number</h3>	
+<form action="#">
+	<input type="number" name="number" id="numb" placeholder="Number: " required>
+	<input type="number" name="power" id="power" placeholder="Power: " required>
+	<button id="power_button">Submit</button>
+</form>
+<p>The result is: <span id="result"><span/></p>
+
+
+
+	<script src="script.js"></script>
+	</body>
+</html>
